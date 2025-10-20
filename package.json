@@ -1,0 +1,17 @@
+{
+  "name": "ts-proyecto2",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "npx ts-node src/tolist/main.ts",
+    "build": "npx tsc"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/prompt-sync": "^4.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.3"
+  }
+}

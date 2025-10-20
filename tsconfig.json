@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    /* === MÓDULOS Y COMPATIBILIDAD === */
+    "target": "ES2020",                   // Moderno, compatible con Node actual
+    "module": "CommonJS",                 // Evita los errores con los imports (no pide .js)
+    "moduleResolution": "node",           // Usa resolución de módulos al estilo Node.js
+    "esModuleInterop": true,              // Permite usar imports de módulos comunes (como prompt-sync)
+
+    /* === ESTRUCTURA DEL PROYECTO === */
+    "rootDir": "src",                     // Carpeta donde están tus .ts
+    "outDir": "dist",                     // Carpeta donde se compilan los .js
+    "resolveJsonModule": true,            // Permite importar JSON si hicieras config
+    "allowSyntheticDefaultImports": true, // Soporte a imports tipo default (prompt-sync)
+
+    /* === SEGURIDAD Y TIPADO === */
+    "strict": true,                       // Tipado estricto (te avisa de errores reales)
+    "forceConsistentCasingInFileNames": true, // Evita errores por mayúsculas/minúsculas
+
+    /* === OTROS === */
+    "skipLibCheck": true                  // Evita errores en librerías externas
+  },
+
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
