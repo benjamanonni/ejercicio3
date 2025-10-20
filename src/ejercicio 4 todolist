@@ -1,0 +1,50 @@
+# Ejercicio 3 — Programación basada en prototipos
+
+## 🧱 Abstracción
+En este trabajo representé el concepto de **Tarea** usando una **interfaz** y una **función constructora**.
+La interfaz me sirvió como molde de tipos porque en TypeScript es necesario definir qué tipo de dato tiene cada atributo.
+Cada vez que se da un alta, se llama a la función constructora y se crea un nuevo objeto con los datos que ingresa el usuario.
+
+Incluí todos los atributos que pedía el ejercicio, como título, descripción, estado, fechas y dificultad, ya que son los que definen bien una tarea.
+No dejé afuera nada que se solicitara en el enunciado.
+
+---
+
+## ⚙️ Creación e instanciación prototípica
+A diferencia de las clases, trabajé con una **función constructora**, que cumple un rol parecido pero de forma más libre.
+Cada vez que se utiliza `new`, se crea un nuevo objeto que tiene su propio contenido y un enlace interno al prototipo de la función.
+
+La diferencia con las clases es que con una función constructora puedo crear los objetos desde cualquier parte del programa y no solo desde una clase principal.
+Esto hace que el código sea más **flexible y dinámico**, aunque también **menos seguro**, porque cualquiera puede modificar los objetos.
+
+Usé este método porque el ejercicio pedía hacerlo con el paradigma basado en prototipos, y además me resultó más simple y directo para crear los objetos con sus propiedades.
+
+---
+
+## 🔁 Reutilización mediante prototipos
+En este programa **no utilicé reutilización mediante prototipo**, porque **no definí métodos dentro del prototipo**.
+Cada acción del sistema (como alta, edición o búsqueda) está separada en su propio módulo.
+Esto permite mantener las funciones bien organizadas y facilita el trabajo sin necesidad de compartir métodos entre objetos.
+
+Si hubiera agregado funciones dentro del prototipo, todos los objetos creados podrían usarlas, pero en este caso **no era necesario**, ya que el ejercicio solo pedía manejar tareas individuales.
+
+---
+
+## 🧩 Encapsulamiento y modularidad
+Aunque JavaScript no tiene un sistema real de encapsulamiento con atributos privados, sí se puede lograr una forma de **encapsulamiento modular** usando `import` y `export`.
+Por eso, dividí el código en diferentes archivos: alta, editar, buscar, mostrar y menú.
+Cada uno cumple una función específica y solo expone lo que necesita compartir con el resto.
+
+De esta manera, el programa queda más **ordenado, legible y fácil de mantener**, porque cada módulo se encarga de una sola parte del funcionamiento general.
+
+---
+
+## 💬 Conclusión
+En este ejercicio apliqué los conceptos más importantes del paradigma basado en prototipos:
+
+- **Abstracción:** definí la estructura de una tarea mediante una interfaz.
+- **Creación prototípica:** generé objetos nuevos a partir de una función constructora.
+- **Encapsulamiento modular:** separé el código en varios archivos para mejorar la organización.
+
+No apliqué **herencia, polimorfismo ni reutilización de métodos por prototipo**, ya que el programa no los requería.
+El objetivo principal fue crear, editar y administrar tareas individuales de manera ordenada y flexible.

@@ -1,0 +1,48 @@
+# Análisis del Ejercicio 2 – Programación Orientada a Objetos (POO)
+
+## 1. Abstracción
+En este ejercicio representé el concepto de **calculadora** como una clase que agrupa tanto sus datos (`n1` y `n2`) como sus operaciones básicas (`suma`, `resta`, `multiplicacion`, `division`).
+Decidí incluir solo dos variables porque el enunciado pedía una calculadora simple, sin funciones adicionales como memoria, historial o pantalla.
+De esta forma, apliqué el principio de **abstracción**, tomando únicamente los elementos esenciales para cumplir el objetivo del programa.
+
+---
+
+## 2. Encapsulamiento
+Utilicé el modificador `private` para los atributos `n1` y `n2`, con el fin de **proteger los datos internos del objeto**.
+Esto evita que otras partes del código modifiquen los valores directamente, lo cual es una buena práctica de seguridad y organización.
+En este caso, la encapsulación no se aprecia en toda su potencia porque solo existe una clase, pero sirve para que en un futuro otras clases no puedan acceder a estos atributos sin permisos.
+
+---
+
+## 3. Métodos
+Definí las operaciones (`suma`, `resta`, `multiplicacion`, `division`) como **métodos dentro de la clase** y no como funciones externas.
+Esto permite que cada objeto de tipo `Calculadora` tenga acceso directo a sus propias funciones, manteniendo el código más ordenado y abstracto.
+Cada método representa una **acción o comportamiento** que la calculadora puede realizar.
+
+---
+
+## 4. Instanciación
+En el archivo `main.ts` creé un objeto de la clase con `const calc = new Calculadora(n1, n2);`.
+Al hacerlo, estoy **instanciando** la clase, es decir, creando un objeto real a partir del molde `Calculadora`.
+Esto permite generar múltiples calculadoras independientes si fuera necesario, cada una con sus propios valores.
+
+---
+
+## 5. Herencia
+No apliqué **herencia** en este ejercicio, ya que la calculadora era una clase única y no necesitaba extender o heredar propiedades de otra.
+Si quisiera hacerlo, podría crear una clase padre como `Computadora` o `Dispositivo`, y hacer que `Calculadora` herede sus atributos y métodos.
+Sin embargo, en este caso no era necesario, porque el objetivo era representar un único tipo de objeto.
+
+---
+
+## 6. Polimorfismo
+Tampoco apliqué **polimorfismo**, ya que solo tengo una clase concreta y no existen subclases que redefinan comportamientos.
+Podría usarse polimorfismo si hubiera distintos tipos de calculadoras, como `CalculadoraCientifica` o `CalculadoraFinanciera`, que implementaran el mismo método `calcular()` con diferentes resultados.
+En este caso, al no existir esa variedad, el uso del polimorfismo no era necesario.
+
+---
+
+##  Conclusión
+El ejercicio me permitió aplicar los principios fundamentales de la Programación Orientada a Objetos: **abstracción, encapsulamiento, definición de métodos e instanciación**.
+No utilicé herencia ni polimorfismo porque el problema era simple, pero comprendí cómo podrían implementarse en versiones más complejas.
+Gracias a esta estructura, el código queda más organizado, extensible y fácil de mantener.

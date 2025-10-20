@@ -1,0 +1,15 @@
+Análisis de JavaScript orientado a objetos basado en prototipos
+1️⃣ Generalización simbólica
+
+JavaScript, bajo el paradigma de programación orientada a objetos basada en prototipos, se rige por el estándar ECMAScript, que define su sintaxis y estructuras.
+Las instrucciones se ejecutan de forma secuencial y el flujo de control se maneja con estructuras como if, else, for y while.
+
+El lenguaje permite crear objetos a partir de funciones constructoras y establecer herencia mediante enlaces de prototipo (__proto__), en lugar de usar clases tradicionales.
+Se caracteriza por su tipado dinámico y débil, el uso de llaves {} para delimitar bloques, y la posibilidad de que cualquier función u objeto contenga propiedades y métodos propios.
+
+2️⃣ Creencias de los profesionales
+
+La comunidad valora la flexibilidad y dinamismo de JavaScript, que permite modificar objetos en tiempo de ejecución y construir jerarquías de forma libre mediante prototipos.
+Se considera que la herencia prototípica es más simple e intuitiva que la clásica, y que el lenguaje favorece la creatividad y la experimentación rápida.
+
+Además, su capacidad de ejecución en cualquier navegador y su modelo de objetos unificado lo convierten en una herramienta versátil y universal para el desarrollo web.
